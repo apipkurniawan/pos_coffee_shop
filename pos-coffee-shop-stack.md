@@ -14,6 +14,7 @@ bahan baku.
     dan mutation API.
 -   **Zustand** --- state lokal UI atau state order sementara di sisi
     client jika diperlukan.
+-   **Motion** --- untuk animasi drawer, modal, transisi halaman, hover tombol, notifikasi, dan perubahan status order.
 
 ## Backend
 
@@ -46,6 +47,7 @@ bahan baku.
 -   **Jest** --- unit test.
 -   **Supertest** --- integration test untuk endpoint backend.
 -   **Playwright** --- end-to-end test untuk alur kasir utama.
+-   **k6** --- Menjalankan simulasi banyak virtual user dengan skenario berbasis JavaScript/TypeScript-style scripting. 
 
 ## Deployment
 
