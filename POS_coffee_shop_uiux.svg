@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
+  <rect width="1600" height="1120" fill="#E2E8F0"/>
+  <g font-family="Arial, sans-serif">
+    <text x="40" y="42" font-size="22" font-weight="700" fill="#0F172A">COFFEE POS — Desktop wireframe</text>
+    <text x="40" y="68" font-size="14" fill="#475569">01 Pemesanan • 02 Pendaftaran member • 03 Pembayaran dan voucher</text>
+
+    <!-- SCREEN 01: POS -->
+    <rect x="40" y="90" width="1520" height="570" rx="16" fill="#F8FAFC"/>
+    <path d="M56 90H1544Q1560 90 1560 106V158H40V106Q40 90 56 90" fill="#FFFFFF"/>
+    <text x="64" y="132" font-size="22" font-weight="700" fill="#0F172A">Kopi Kedai</text>
+    <text x="258" y="131" font-size="15" fill="#4F46E5">Kasir</text>
+    <text x="332" y="131" font-size="15" fill="#64748B">Pesanan</text>
+    <text x="1360" y="131" font-size="14" fill="#475569">Kasir: Rina • Outlet 01</text>
+
+    <rect x="64" y="180" width="914" height="44" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="80" y="208" font-size="14" fill="#64748B">Cari nama menu atau SKU...</text>
+    <rect x="64" y="240" width="100" height="34" rx="17" fill="#4F46E5"/>
+    <text x="88" y="262" font-size="14" fill="#FFFFFF">Semua</text>
+    <rect x="176" y="240" width="90" height="34" rx="17" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="204" y="262" font-size="14" fill="#475569">Kopi</text>
+    <rect x="278" y="240" width="110" height="34" rx="17" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="298" y="262" font-size="14" fill="#475569">Non-kopi</text>
+    <rect x="400" y="240" width="110" height="34" rx="17" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="421" y="262" font-size="14" fill="#475569">Makanan</text>
+
+    <g fill="#FFFFFF" stroke="#E2E8F0">
+      <rect x="64" y="294" width="292" height="148" rx="12"/>
+      <rect x="374" y="294" width="292" height="148" rx="12"/>
+      <rect x="684" y="294" width="294" height="148" rx="12"/>
+      <rect x="64" y="458" width="292" height="148" rx="12"/>
+      <rect x="374" y="458" width="292" height="148" rx="12"/>
+      <rect x="684" y="458" width="294" height="148" rx="12"/>
+    </g>
+    <g font-size="17" font-weight="700" fill="#0F172A">
+      <text x="84" y="330">Iced Latte</text>
+      <text x="394" y="330">Hot Cappuccino</text>
+      <text x="704" y="330">Iced Americano</text>
+      <text x="84" y="494">Iced Chocolate</text>
+      <text x="394" y="494">Croissant</text>
+      <text x="704" y="494">French Fries</text>
+    </g>
+    <g font-size="14" fill="#475569">
+      <text x="84" y="357">Rp25.000</text>
+      <text x="394" y="357">Rp28.000</text>
+      <text x="704" y="357">Rp22.000</text>
+      <text x="84" y="521">Rp30.000</text>
+      <text x="394" y="521">Rp15.000</text>
+      <text x="704" y="521">Rp20.000</text>
+    </g>
+    <g fill="#EEF2FF">
+      <rect x="84" y="380" width="252" height="40" rx="8"/>
+      <rect x="394" y="380" width="252" height="40" rx="8"/>
+      <rect x="704" y="380" width="254" height="40" rx="8"/>
+      <rect x="84" y="544" width="252" height="40" rx="8"/>
+      <rect x="394" y="544" width="252" height="40" rx="8"/>
+      <rect x="704" y="544" width="254" height="40" rx="8"/>
+    </g>
+    <g font-size="14" fill="#4338CA" text-anchor="middle">
+      <text x="210" y="406">+ Tambah</text>
+      <text x="520" y="406">+ Tambah</text>
+      <text x="831" y="406">+ Tambah</text>
+      <text x="210" y="570">+ Tambah</text>
+      <text x="520" y="570">+ Tambah</text>
+      <text x="831" y="570">+ Tambah</text>
+    </g>
+
+    <!-- ORDER PANEL -->
+    <rect x="1002" y="180" width="534" height="456" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="1022" y="212" font-size="18" font-weight="700" fill="#0F172A">Pesanan baru</text>
+    <rect x="1022" y="230" width="492" height="38" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <text x="1034" y="255" font-size="14" fill="#475569">Cari member: nomor HP</text>
+    <text x="1378" y="255" font-size="14" font-weight="700" fill="#4F46E5">+ Daftar</text>
+    <rect x="1022" y="280" width="150" height="36" rx="8" fill="#EEF2FF" stroke="#818CF8"/>
+    <text x="1068" y="304" font-size="14" fill="#4338CA">Dine-in</text>
+    <rect x="1182" y="280" width="150" height="36" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="1220" y="304" font-size="14" fill="#475569">Takeaway</text>
+    <rect x="1342" y="280" width="172" height="36" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="1360" y="304" font-size="14" fill="#475569">Meja: T03</text>
+    <text x="1022" y="350" font-size="15" font-weight="700" fill="#0F172A">Iced Latte</text>
+    <text x="1284" y="350" font-size="14" fill="#475569">−  2  +</text>
+    <text x="1424" y="350" font-size="14" fill="#0F172A">50.000</text>
+    <text x="1022" y="374" font-size="13" fill="#64748B">Catatan: tanpa gula</text>
+    <text x="1022" y="410" font-size="15" font-weight="700" fill="#0F172A">Croissant</text>
+    <text x="1284" y="410" font-size="14" fill="#475569">−  1  +</text>
+    <text x="1424" y="410" font-size="14" fill="#0F172A">15.000</text>
+    <path d="M1022 432H1514" stroke="#E2E8F0"/>
+    <text x="1022" y="461" font-size="14" fill="#475569">Subtotal</text>
+    <text x="1410" y="461" font-size="14" fill="#0F172A">Rp65.000</text>
+    <text x="1022" y="488" font-size="13" fill="#64748B">Pajak / biaya layanan: Rp0 pada contoh ini</text>
+    <text x="1022" y="525" font-size="18" font-weight="700" fill="#0F172A">Total</text>
+    <text x="1390" y="525" font-size="18" font-weight="700" fill="#0F172A">Rp65.000</text>
+    <rect x="1022" y="550" width="492" height="48" rx="8" fill="#4F46E5"/>
+    <text x="1268" y="580" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">Lanjut ke pembayaran</text>
+    <text x="1022" y="620" font-size="12" fill="#64748B">Bisa lanjut tanpa member</text>
+
+    <!-- SCREEN 02: MEMBER REGISTRATION -->
+    <rect x="40" y="690" width="728" height="390" rx="16" fill="#FFFFFF"/>
+    <text x="64" y="726" font-size="19" font-weight="700" fill="#0F172A">02 — Modal pendaftaran member</text>
+    <text x="64" y="754" font-size="14" fill="#475569">Daftar sebelum bayar agar pembelian ini ikut dihitung.</text>
+    <text x="64" y="792" font-size="14" font-weight="700" fill="#334155">Nama member</text>
+    <rect x="64" y="804" width="680" height="44" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <text x="80" y="832" font-size="15" fill="#0F172A">Ayu</text>
+    <text x="64" y="878" font-size="14" font-weight="700" fill="#334155">Nomor HP</text>
+    <rect x="64" y="890" width="680" height="44" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <text x="80" y="918" font-size="15" fill="#0F172A">081234567890</text>
+    <text x="64" y="960" font-size="13" fill="#64748B">Beli 10 cup berbayar, dapat voucher gratis 1 cup.</text>
+    <rect x="64" y="990" width="204" height="48" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="166" y="1020" font-size="14" fill="#475569" text-anchor="middle">Batal</text>
+    <rect x="284" y="990" width="460" height="48" rx="8" fill="#4F46E5"/>
+    <text x="514" y="1020" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Daftar dan hubungkan ke pesanan</text>
+
+    <!-- SCREEN 03: PAYMENT -->
+    <rect x="792" y="690" width="768" height="390" rx="16" fill="#FFFFFF"/>
+    <text x="816" y="726" font-size="19" font-weight="700" fill="#0F172A">03 — Pembayaran dan loyalty</text>
+    <rect x="816" y="744" width="720" height="80" rx="10" fill="#F0FDFA" stroke="#2DD4BF"/>
+    <text x="832" y="771" font-size="15" font-weight="700" fill="#115E59">Ayu • Progres saat ini: 8 / 10 cup</text>
+    <text x="832" y="796" font-size="13" fill="#115E59">Beli 2 cup berbayar → dapat 1 voucher setelah lunas. Sisa progres: 0.</text>
+    <text x="816" y="851" font-size="14" fill="#475569">Voucher saat ini: 0 • Hadiah baru berlaku pada transaksi berikutnya.</text>
+    <g fill="#FFFFFF" stroke="#CBD5E1">
+      <rect x="816" y="870" width="168" height="40" rx="8"/>
+      <rect x="1000" y="870" width="168" height="40" rx="8"/>
+      <rect x="1184" y="870" width="168" height="40" rx="8"/>
+      <rect x="1368" y="870" width="168" height="40" rx="8"/>
+    </g>
+    <g font-size="14" fill="#334155" text-anchor="middle">
+      <text x="900" y="896">Tunai</text>
+      <text x="1084" y="896">QRIS</text>
+      <text x="1268" y="896">Transfer</text>
+      <text x="1452" y="896">Split payment</text>
+    </g>
+    <text x="816" y="945" font-size="18" font-weight="700" fill="#0F172A">Tagihan: Rp65.000</text>
+    <text x="1184" y="945" font-size="14" fill="#475569">Status: menunggu pembayaran</text>
+    <rect x="816" y="970" width="720" height="48" rx="8" fill="#4F46E5"/>
+    <text x="1176" y="1000" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Lanjutkan metode pembayaran</text>
+    <text x="816" y="1047" font-size="12" fill="#64748B">QRIS / transfer lunas setelah verifikasi • Tunai dikonfirmasi kasir</text>
+  </g>
+</svg>
