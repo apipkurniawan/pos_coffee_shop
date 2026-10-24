@@ -5,101 +5,10 @@ implementasi untuk aplikasi POS coffee shop yang mendukung dine-in,
 takeaway, kasir, antrean barista, membership, voucher, serta pengelolaan
 bahan baku.
 
-## 1. Stack Teknologi yang Dipilih
-
-### Frontend
-
--   **Next.js + TypeScript** --- aplikasi kasir dan dashboard
-    operasional.
--   **Tailwind CSS + shadcn/ui** --- styling dan komponen antarmuka.
--   **TanStack Query** --- pengelolaan server state, fetching, caching,
-    dan mutation API.
--   **Zustand** --- state lokal UI atau state order sementara di sisi
-    client jika diperlukan.
-
-### Backend
-
--   **NestJS** --- REST API dengan struktur modular yang mudah
-    dikembangkan dan diuji.
--   **REST API** --- komunikasi utama antara frontend dan backend.
--   **Socket.IO** --- pembaruan antrean barista/kitchen secara
-    real-time.
-
-### Database dan ORM
-
--   **PostgreSQL** --- penyimpanan transaksi, menu, pembayaran, member,
-    voucher, resep, dan pergerakan stok.
--   **Prisma** --- ORM dan pengelolaan skema database.
-
-### Autentikasi dan keamanan
-
--   Gunakan **session cookie yang aman** untuk autentikasi aplikasi web.
--   Terapkan validasi dan otorisasi di backend untuk setiap aksi
-    penting, khususnya pembayaran, penggunaan voucher, dan perubahan
-    stok.
--   Gunakan transaksi database untuk proses yang harus konsisten,
-    misalnya menyimpan pembayaran sekaligus memperbarui loyalty
-    progress.
--   Terapkan idempotency pada endpoint transaksi/pembayaran agar request
-    yang diulang tidak membuat transaksi ganda.
-
-### Testing
-
--   **Jest** --- unit test.
--   **Supertest** --- integration test untuk endpoint backend.
--   **Playwright** --- end-to-end test untuk alur kasir utama.
-
-### Deployment
-
--   **Docker** --- menyamakan lingkungan aplikasi saat development dan
-    deployment.
--   **Managed cloud atau VPS** --- tempat menjalankan aplikasi, API, dan
-    database sesuai kebutuhan operasional.
-
-### Komponen yang belum perlu untuk MVP
-
-**Redis belum wajib** pada tahap awal. Pertimbangkan Redis ketika
-aplikasi membutuhkan beberapa instance backend, koordinasi Socket.IO
-lintas instance, caching bersama, atau pemrosesan job asynchronous yang
-lebih kompleks.
-
-### Batas modul backend yang disarankan
-
--   `auth` dan `users`
--   `menu` dan `categories`
--   `orders` dan `order-items`
--   `payments`
--   `members` dan `loyalty`
--   `vouchers` dan `redemptions`
--   `recipes` dan `inventory`
--   `barista-queue`
--   `reports` dan `audit-logs`
-
-### Catatan desain penting
-
--   Pisahkan **status order**, **status pembayaran**, dan **status
-    persiapan**. Ketiganya menggambarkan hal yang berbeda.
--   Simpan pembayaran sebagai entitas tersendiri agar transaksi dapat
-    mendukung split payment bila diperlukan.
--   Catat perubahan stok sebagai inventory movement, bukan hanya
-    mengubah angka stok tanpa riwayat.
--   Pengurangan bahan berdasarkan resep harus dilakukan secara konsisten
-    di backend dan dalam transaksi database sesuai kebijakan kapan order
-    dianggap valid.
--   Progress loyalty hanya bertambah untuk item/transaksi yang memenuhi
-    aturan program. Tentukan secara eksplisit apakah minuman gratis dari
-    voucher ikut dihitung.
--   Penerbitan dan penukaran voucher harus aman terhadap request
-    berulang agar voucher tidak terbit atau terpakai dua kali.
-
-------------------------------------------------------------------------
-
-## 5. Urutan Implementasi Paling Efektif
-
 Roadmap berikut memprioritaskan alur transaksi inti terlebih dahulu,
 kemudian loyalty, antrean barista, dan inventory.
 
-### Tahap 1 --- Fondasi
+## Tahap 1 --- Fondasi
 
 -   Siapkan repository frontend Next.js dan backend NestJS.
 -   Siapkan PostgreSQL, Prisma, konfigurasi environment, dan migration.
@@ -110,7 +19,7 @@ kemudian loyalty, antrean barista, dan inventory.
 **Hasil tahap:** aplikasi dapat dijalankan, pengguna dapat login, dan
 backend terhubung ke database.
 
-### Tahap 2 --- Menu dan order
+## Tahap 2 --- Menu dan order
 
 -   Buat CRUD kategori dan menu.
 -   Dukung tipe layanan **dine-in** dan **takeaway**.
@@ -124,7 +33,7 @@ backend terhubung ke database.
 **Hasil tahap:** kasir dapat membuat order dan melihat ringkasan
 tagihan.
 
-### Tahap 3 --- Pembayaran
+## Tahap 3 --- Pembayaran
 
 -   Implementasikan pencatatan metode pembayaran, misalnya tunai, QRIS,
     atau transfer.
@@ -138,7 +47,7 @@ tagihan.
 `buat order → bayar → simpan transaksi → tampilkan nomor order` berjalan
 dengan aman.
 
-### Tahap 4 --- Membership dan loyalty
+## Tahap 4 --- Membership dan loyalty
 
 -   Cari member menggunakan nomor telepon.
 -   Sediakan pendaftaran member dari alur kasir.
@@ -154,7 +63,7 @@ dengan aman.
 **Hasil tahap:** kasir dapat menghubungkan transaksi ke member dan
 menggunakan voucher sesuai aturan program.
 
-### Tahap 5 --- Antrean barista dan inventory
+## Tahap 5 --- Antrean barista dan inventory
 
 -   Tampilkan order yang sudah valid di layar antrean barista secara
     real-time menggunakan Socket.IO.
@@ -170,7 +79,7 @@ menggunakan voucher sesuai aturan program.
 **Hasil tahap:** order masuk ke antrean barista dan proses persiapan
 dapat dipantau; penggunaan bahan mulai tercatat.
 
-### Tahap 6 --- Hardening dan go-live
+## Tahap 6 --- Hardening dan go-live
 
 -   Tambahkan laporan penjualan, ringkasan metode pembayaran, dan
     laporan stok.
@@ -186,7 +95,7 @@ dapat dipantau; penggunaan bahan mulai tercatat.
 **Hasil tahap:** MVP siap dipakai dengan proses operasional dan
 pemantauan dasar.
 
-## Prioritas MVP
+### Prioritas MVP
 
 Pastikan alur berikut stabil sebelum memperluas fitur:
 
@@ -198,7 +107,7 @@ Pastikan alur berikut stabil sebelum memperluas fitur:
 6.  Setelah itu, tambahkan membership, voucher, dan inventory secara
     bertahap.
 
-## Estimasi
+### Estimasi
 
 Untuk satu developer yang mengerjakan frontend dan backend, estimasi
 awal sekitar **6--9 minggu**, tergantung detail UI, integrasi
