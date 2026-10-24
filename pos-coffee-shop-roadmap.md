@@ -1,9 +1,4 @@
-# POS Coffee Shop --- Stack Teknologi dan Roadmap Implementasi
-
-Dokumen ini merangkum stack teknologi yang direkomendasikan dan urutan
-implementasi untuk aplikasi POS coffee shop yang mendukung dine-in,
-takeaway, kasir, antrean barista, membership, voucher, serta pengelolaan
-bahan baku.
+# POS Coffee Shop --- Roadmap Implementasi
 
 Roadmap berikut memprioritaskan alur transaksi inti terlebih dahulu,
 kemudian loyalty, antrean barista, dan inventory.
